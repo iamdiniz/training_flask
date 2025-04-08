@@ -43,3 +43,15 @@ Tutorial
 
     Esse código usa a sintaxe do Jinja. Conseguimos inserir esse código em outras paginas apenas fazendo que elas herdem de base!
     A boa pratica é que as paginas sigam esse formato!
+
+11. Adicionamos SQLAlchemy (Lib) em nossa aplicação. O que significa que precisamos novamente parar a execução e buildar a imagem novamente? Sim.
+
+12. Para solucionarmos isso de forma ideal, vamos criar um requirements.txt com:
+
+    pip freeze > requirements.txt
+
+13. Vamos rebuildar nossa imagem e executar novamente nosso compose, e está resolvido.
+
+14. O Docker não sabe que algo novo foi adicionado em relação a libs. Logo apos realizar os passos acima, faça:
+
+    docker-compose up --build
