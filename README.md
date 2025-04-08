@@ -36,3 +36,10 @@ Tutorial
       - ./app.py:/app/app.py
       - ./static:/app/static
       - ./templates:/app/templates
+
+10. Criamos um base.html. Nele temos um código como esse:
+
+    {% block head %}{% endblock %}
+
+    Esse código usa a sintaxe do Jinja. Conseguimos inserir esse código em outras paginas apenas fazendo que elas herdem de base!
+    A boa pratica é que as paginas sigam esse formato!
