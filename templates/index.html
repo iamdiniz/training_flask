@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<h1>Hello, Im HEAD</h1>
+
 {% endblock %}
 
 {% block body %}
-<h1>Hello, Im BODY!</h1>
+<h2>Login</h2>
+<form method="POST" action="/add">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="password">Senha:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <button type="submit">Enter</button>
+</form>
 {% endblock %}

@@ -55,3 +55,15 @@ Tutorial
 14. O Docker não sabe que algo novo foi adicionado em relação a libs. Logo apos realizar os passos acima, faça:
 
     docker-compose up --build
+
+- HTML & CSS
+
+    1. A melhor pratica para organização é você sempre deixar as partes de (posição, cor, estilo) sempre para o seu CSS (Sua pasta CSS)
+
+    2. Sempre crie classes e referencie elas em seus elementos HTML. E essas classes você personaliza ela no seu arquivo CSS.
+
+    3. É normal no seu compose exibir o status code: 304 Not Modified. "GET /static/css/main.css HTTP/1.1" 304 -"
+
+    4. Esse código de status não é um erro, na real é uma resposta normal e otimizada do servidor. Ele significa:
+
+        “O recurso requisitado (ex: o CSS main.css) não foi modificado desde a última vez que você o buscou. Pode usar o que está em cache.”
