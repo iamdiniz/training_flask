@@ -67,3 +67,7 @@ Tutorial
     4. Esse código de status não é um erro, na real é uma resposta normal e otimizada do servidor. Ele significa:
 
         “O recurso requisitado (ex: o CSS main.css) não foi modificado desde a última vez que você o buscou. Pode usar o que está em cache.”
+    
+- Redirecionamento
+
+    1. O redirect aqui em Flask, ele vai te mandar para tal função que você criou.
